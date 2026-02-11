@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENIYA | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            color: #ffffff;
+        }
+        #typing-college::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+        header {
+            background-color: #000000aa;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #00ffd5;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #f2ff00;
+        }
+
+        section {
+            margin: 30px auto;
+            width: 80%;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #c33764;
+            border-bottom: 3px solid #1d2671;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #1d2671;
+            color: white;
+            padding: 8px 15px;
+            margin: 8px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #000000cc;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #00ffd5;
+        }
+      
+
+
+    
+    </style>
+</head>
+          <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const text = "BANNARI AMMAN INSTITUTE OF TECHNOLOGY";
+    const typingSpeed = 100;
+    const erasingSpeed = 60;
+    const delay = 1500;
+
+    let index = 0;
+    let isDeleting = false;
+    const element = document.getElementById("typing-college");
+
+    function typeEffect() {
+        if (!isDeleting && index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, typingSpeed);
+        } 
+        else if (isDeleting && index > 0) {
+            element.textContent = text.substring(0, index - 1);
+            index--;
+            setTimeout(typeEffect, erasingSpeed);
+        } 
+        else {
+            isDeleting = !isDeleting;
+            setTimeout(typeEffect, delay);
+        }
+    }
+
+    typeEffect();
+});
+</script>
+</body>
+
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="11.jpg" alt="Bootstrap" width="30" height="24">
+    </a>
+    <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#About">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Projects">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#Contact">Contact</a>
+  </li>
+</ul>
+  </div>
+</nav>
+<section  id="Home">
+      <header>
+        <h1 >ENIYA</h1>
+        <p class="fst-italic">2nd Year B.Tech – ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</p>
+        <p>
+            <span id="typing-college"></span>
+       </p>
+       
+
+
+        <img src="download.png" alt="">
+    </header>
+</section>
+    
+
+    <section id="About" >
+        <h2 class="fst-italic">About Me</h2>
+        <p>
+            I am ENIYA A, currently pursuing my 2nd year B.Tech in ARTIFICIAL INTELLIGENCE AND DATA SCIENCE 
+            at BANNARI AMMAN INSTITUTE OF TECHNOLOGY. I am passionate about learning AI technologies, 
+            data-driven solutions, and modern software development.
+        </p>
+        <p>
+            Motivated second-year engineering studentspecializing in Artificial Intelligence and Data Science with a strong foundation in Python, Machine Learning, and data analysis. Seeking opportunities to apply analytical and problem solving skills through internships, projects, and research-oriented roles while continuously improving technical depth and industry readiness
+        </p>
+    </section>
+
+    <section id="Education">
+        <h2 class="fst-italic">Education</h2>
+        <ul>
+            <li><strong>Bachelor Of Technology 2024-2028</strong></li>
+            <li>Bannari Amman Institute of Technology</li>
+            <li><strong>Kongu Matric. Hr. Sec. School 2023-2024</strong></li>
+            <li>HSC Percentage: 93.5%</li>
+            <li><strong>Kongu Matric. Hr. Sec. School 2021-2022</strong></li>
+            <li>SSLC Percentage:91%</li>
+        </ul>
+    </section >
+
+    <section>
+        <h2 class="fst-italic">Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Artificial Intelligence</span>
+            <span>Data Science Basics</span>
+            <span>Machine Learning (Beginner)</span>
+            <span>React</span>
+            <span>Java</span>
+            <span>Web Development</span>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="fst-italic">Interests</h2>
+        <ul>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Artificial Intelligence & Data Science</li>
+            <li>Data Analysis</li>
+            <li>Web Development</li>
+            <li>Learning New Technologies</li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="fst-italic">Competitive Programming & Aptitude</h2>
+        <ul>
+            <li>Solved 50+ problems on LeetCode(Beginner Level)</li>
+            <li>Solved 150–200 aptitude problems(Quantitative & Logical Reasoning)</li>
+            <li>Actively improving Data Structures & Algorithms skill</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="fst-italic">Languages Known</h2>
+        <ul>
+            <li>Tamil</li>
+            <li>English</li>
+        </ul>
+    </section>
+    <section id="Projects">
+        <h2 class="fst-italic">Projects</h2>
+        <ul>
+            <li>3rd Place – National Level Hackathon for AI-Powered Learning Platform for
+Deaf and Mute Students (Oct 2025)</li>
+<li> Oracle Cloud Infrastructure 2025 Certified Foundations Associate</li>
+<li> Participated in TN Skills 2025 in the domain of Software Application
+Development and cleared level 1.</li>
+<li> Participated in EY Techathon 6.0 and cleared round 1</li>
+<li>Winner in One Day Activity in college level Competitions</li>
+        </ul>
+    </section>
+   <section id="Contact">
+        <h2 class="fst-italic">Contact</h2>
+          <ul>
+            <li>Phone Number : 7339197734</li>
+            <li>Email id : eniyaa.ad24@bitsathy.ac.in</li>
+            <li>Linked in : <a href="https://www.linkedin.com/in/eniya-a-8157a1355/">Linked in</a> </li>
+            <li>Github : <a href="https://github.com/sessions/verified-device/mobile? auto=true">Github</a></li>
+            <li>Hackerrank : <a href="www.hackerrank.com/eniya">Hackerrank</a></li>
+          </ul>
+        
+
+   </section>
+    <footer>
+        © 2025 | Portfolio of ENIYA A
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

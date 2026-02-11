@@ -1,0 +1,76 @@
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(to right, #1d2671, #c33764);
+            color: #ffffff;
+        }
+        #typing-college::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+        header {
+            background-color: #000000aa;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #00ffd5;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #f2ff00;
+        }
+
+        section {
+            margin: 30px auto;
+            width: 80%;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #c33764;
+            border-bottom: 3px solid #1d2671;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #1d2671;
+            color: white;
+            padding: 8px 15px;
+            margin: 8px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #000000cc;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #00ffd5;
+        }
+      
+
+
+    
